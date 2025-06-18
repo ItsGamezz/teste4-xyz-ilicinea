@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ilicínea - Destaques</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      background: #ddd481;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .banner {
+      position: relative;
+      height: 550px;
+      background: url('ilicinea.png') no-repeat center center;
+      background-size: cover;
+      color: white;
+    }
+
+    .wave {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 120px;
+    }
+
+    .wave path {
+      fill: #ddd481;
+    }
+
+    .text-box {
+      position: absolute;
+      top: 100px;
+      left: 40px;
+      font-size: 90px;
+      font-weight: 900;
+      color: rgba(0, 160, 200, 0.75);
+      font-family: 'Arial Black', Arial, sans-serif;
+      text-shadow: 2px 2px 7px rgba(0,0,0,0.25),
+                   0 0 15px rgba(0, 200, 255, 0.5);
+      user-select: none;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .content {
+      max-width: 820px;
+      margin: 30px auto;
+      padding: 0 15px;
+      text-align: center;
+      color: #000;
+    }
+
+    .content h1 {
+      font-size: 3.2rem;
+      margin-bottom: 18px;
+      color: #033d49;
+    }
+
+    .content p {
+      font-size: 1.3rem;
+      line-height: 1.5;
+    }
+
+    .big-title {
+      font-size: 3.8rem;
+      color: #005f73;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      color: #222;
+      margin-bottom: 30px;
+    }
+
+    .group-title {
+      font-size: 2.2rem;
+      color: #004a5f;
+      margin-top: 50px;
+      margin-bottom: 18px;
+    }
+
+    .circle-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 35%;
+    }
+
+    .circle-item {
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      transition: transform 0.3s;
+    }
+
+    .circle-item:hover {
+      transform: scale(1.05);
+    }
+
+    .circle-item img {
+      width: 190px;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #005f73;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .circle-item span {
+      display: block;
+      margin-top: 8px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    @media (max-width: 720px) {
+      .text-box {
+        font-size: 55px;
+        top: 70px;
+        left: 20px;
+      }
+
+      .content h1,
+      .big-title,
+      .group-title {
+        font-size: 1.8rem;
+      }
+
+      .circle-item img {
+        width: 130px;
+        height: 130px;
+      }
+
+      .circle-item span {
+        font-size: 1rem;
+      }
+
+      .wave {
+        height: 90px;
+      }
+
+      .banner {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <div class="text-box">ilicínea</div>
+    <svg class="wave" viewBox="0 0 500 150" preserveAspectRatio="none">
+      <path d="M0,40 C150,80 350,0 500,40 L500,150 L0,150 Z"></path>
+    </svg>
+  </div>
+
+  <div class="content">
+    <h1>Ilicínea - MG</h1>
+    <p>Ilicínea é um município localizado no Sul de Minas Gerais, Brasil. Sua população estimada é de aproximadamente 12.741 habitantes.
+    A cidade está situada a cerca de 300 km de Belo Horizonte, em uma região montanhosa com atrativos naturais.
+    Destaque para festas como a Expoilicínea e a Festa do Carreiro, que celebram a cultura local com shows, rodeios e tradições rurais.</p>
+  </div>
+
+  <div class="content">
+    <h1 class="big-title">Conheça Nossos Destaques</h1>
+    <p class="subtitle">Aqui você encontra o que torna Ilicínea tão especial</p>
+
+    <h2 class="group-title">RESTAURANTES</h2>
+    <div class="circle-container">
+      <a href="#" class="circle-item">
+        <img src="numero1.jpg" alt="Nome 1">
+        <span>Nome 1</span>
+      </a>
+      <a href="#" class="circle-item">
+        <img src="numero2.png" alt="Nome 2">
+        <span>Nome 2</span>
+      </a>
+      <a href="#" class="circle-item">
+        <img src="numero3.png" alt="Nome 3">
+        <span>Nome 3</span>
+      </a>
+    </div>
+
+    <h2 class="group-title">TURISMO</h2>
+    <div class="circle-container">
+      <a href="#" class="circle-item">
+        <img src="numero1.jpg" alt="Nome 1">
+        <span>Nome 1</span>
+      </a>
+      <a href="#" class="circle-item">
+        <img src="numero2.png" alt="Nome 2">
+        <span>Nome 2</span>
+      </a>
+      <a href="#" class="circle-item">
+        <img src="numero3.png" alt="Nome 3">
+        <span>Nome 3</span>
+      </a>
+    </div>
+
+    <h2 class="group-title">HOSPEDARIAS</h2>
+    <div class="circle-container">
+      <a href="#" class="circle-item">
+        <img src="scr/numero1.jpg" alt="Nome 1">
+        <span>Nome 1</span>
+      </a>
+      <a href="#" class="circle-item">
+        <img src="scr/numero2.png" alt="Nome 2">
+        <span>Nome 2</span>
+      </a>
+      <a href="#" class="circle-item">
+        <img src="scr/numero3.png" alt="Nome 3">
+        <span>Nome 3</span>
+      </a>
+    </div>
+  </div>
+<footer>
+    &copy; Direitos Reservados - IW
+  </footer>
+  
+</body>
+</html>
